@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+
 
 namespace Kestrelmon
 {
@@ -6,7 +8,12 @@ namespace Kestrelmon
     {
         public void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Process process = new Process();
+            process.StartInfo.FileName = "nodemon";
+            process.StartInfo.Arguments = "--ext \"cs,json\" --exec \"cmd /c k web\"";
+            process.Start();
+            process.WaitForExit();
+            Console.WriteLine("Done.");
         }
     }
 }

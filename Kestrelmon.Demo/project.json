@@ -19,14 +19,14 @@
         "Microsoft.Framework.Logging": "1.0.0-beta1",
         "Microsoft.Framework.Logging.Console": "1.0.0-beta1",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta1",
-        "kestrelmon": "1.0.0-*"
+        "Kestrelmon": "1.0.0-*"
     },
     "commands": {
         /* Change the port number when you are self hosting this application */
         "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
         "gen": "Microsoft.Framework.CodeGeneration",
         "ef": "EntityFramework.Commands",
-        "kmon" : "kestrelmon"
+        "mon" : "Kestrelmon"
 
     },
     "frameworks": {
