@@ -1,6 +1,7 @@
 ﻿{
     "version": "1.0.0-*",
     "dependencies": {
+
     },
     "commands": { 
         "run" : "run"
@@ -9,7 +10,7 @@
         "aspnet50" : { },
         "aspnetcore50" : { 
             "dependencies": {
-                "System.Console": "4.0.0-beta-22231"
+                "System.Console": "4.0.0-*"
             }
         }
     }
