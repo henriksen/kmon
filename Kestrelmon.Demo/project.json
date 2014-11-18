@@ -26,7 +26,7 @@
         "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
         "gen": "Microsoft.Framework.CodeGeneration",
         "ef": "EntityFramework.Commands",
-        "mon" : "Kestrelmon --ext cs,json,js"
+        "mon" : "Kestrelmon --ext cs,json,js --server web"
 
     },
     "frameworks": {
