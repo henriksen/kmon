@@ -16,7 +16,7 @@ Add a `mon` command to your project.json file:
     "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
     "gen": "Microsoft.Framework.CodeGeneration",
     "ef": "EntityFramework.Commands",
-    "mon" : "Kestrelmon --ext cs,json,js"
+    "mon" : "Kestrelmon --ext cs,json,js --server web"
 },
 ```
 From the command line, run `k mon`. It's pronounced *"kuh-mon"*. 
@@ -24,7 +24,9 @@ From the command line, run `k mon`. It's pronounced *"kuh-mon"*.
 You can call it something else than `mon`, but then you can't shout out "kuh-mon!" when you run it. 
 
 Kestrelmon passes parameters on to nodemon so `--ext cs,json,js` are nodemon parameters telling it to watch files ending in 
-one of those extensions.
+one of those extensions. The `--server` parameter is used to specify the necessary hosting client.  Specify `web` for Windows and `kestrel` for OSX, Linux.
+
+If either `--ext` or `--server` is not specified the default are shown above.
 
 ## Known issues
 This is the first release and a work in progress. Critical issues:
