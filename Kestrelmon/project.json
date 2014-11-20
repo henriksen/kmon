@@ -1,18 +1,20 @@
 ﻿{
-  "version": "0.1.1-*",
-  "dependencies": {
+    "version": "0.2.0-*",
+    "authors": [ "Shayne Boyer", "Glenn F. Henriksen" ],
+    "description": "A k-command for running 'k web' or 'k kestrel' wrapped in nodemon.",
+    "dependencies": {
 
-  },
-  "commands": {
-    "run": "run"
-  },
-  "frameworks": {
-    "aspnet50": {},
-    "aspnetcore50": {
-      "dependencies": {
-        "System.Diagnostics.Process": "4.0.0-beta-22231",
-        "System.Console": "4.0.0-*"
-      }
+    },
+    "commands": {
+        "run": "run"
+    },
+    "frameworks": {
+        "aspnet50": { },
+        "aspnetcore50": {
+            "dependencies": {
+                "System.Diagnostics.Process": "4.0.0-beta-22231",
+                "System.Console": "4.0.0-*"
+            }
+        }
     }
-  }
 }

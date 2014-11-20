@@ -1,12 +1,15 @@
 Kestrelmon
 ==========
 
-ASP.NET 5 wrapper for [nodemon](https://github.com/remy/nodemon). It will use nodemon to watch your source folder for changes and kill and restart your
+ASP.NET 5 wrapper for [nodemon](http://nodemon.io/). It will use nodemon to watch your source folder for changes and kill and restart your
 web server whenever a change is detected. Main use is when making web apps without Visual Studio and it's design time host. 
+
+## Requirements
+Since it uses nodemon to wrap the call to the ASP.NET webserver, both [Node](http://nodejs.org/) and [nodemon](http://nodemon.io/) has to be installed. 
 
 ## Add Kestrelmon to your web project: 
 
-`kpm install Kestrelmon` to install from Nuget.org
+`kpm install Kestrelmon` to install from [Nuget.org](https://www.nuget.org/packages/Kestrelmon/)
 
 Add a `mon` command to your project.json file: 
 
@@ -30,5 +33,5 @@ If either `--ext` or `--server` is not specified the default are shown above.
 
 ## Known issues
 This is the first release and a work in progress. Critical issues:
-* Initial proof of concept only works on Windows and runs the web command. Need some work to run on Mono and run Kestrel. 
 * Little or no error handling. 
+* Needs more flexibility in handling cross platform projects 
