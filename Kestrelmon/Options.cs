@@ -46,5 +46,13 @@ namespace Kestrelmon
                 }
             }
         }
+
+        public string ParsedArgs()
+        {
+            return string.Format("--ext {0} --exec \"{2}k {1} \"", 
+                FileExtensions, 
+                Server, 
+                Server.ToLower() == "web" ? "cmd /c " : "");
+        }
     }
 }
