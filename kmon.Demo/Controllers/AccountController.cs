@@ -5,9 +5,9 @@ using System.Security.Principal;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Mvc;
-using Kestrelmon.Demo.Models;
+using kmon.Demo.Models;
 
-namespace Kestrelmon.Demo.Controllers
+namespace kmon.Demo.Controllers
 {
     [Authorize]
     public class AccountController : Controller

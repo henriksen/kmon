@@ -1,7 +1,7 @@
 ﻿{
     "Data": {
         "DefaultConnection": { 
-            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Kestrelmon.Demo-6fef3bdf-0c19-439d-b7fc-ebb5bcfd200f;Trusted_Connection=True;MultipleActiveResultSets=true"
+            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-kmon.Demo-6fef3bdf-0c19-439d-b7fc-ebb5bcfd200f;Trusted_Connection=True;MultipleActiveResultSets=true"
         }
     },
     "EntityFramework": {

@@ -12,9 +12,9 @@ using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
-using Kestrelmon.Demo.Models;
+using kmon.Demo.Models;
 
-namespace Kestrelmon.Demo
+namespace kmon.Demo
 {
     public class Startup
     {

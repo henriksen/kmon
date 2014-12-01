@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kestrelmon
+namespace kmon
 {
     public class Options
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Kestrelmon.Demo.Models
+namespace kmon.Demo.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

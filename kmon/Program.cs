@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Kestrelmon
+namespace kmon
 {
     public class Program
     {

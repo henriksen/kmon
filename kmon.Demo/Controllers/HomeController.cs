@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNet.Mvc;
 
-namespace Kestrelmon.Demo.Controllers
+namespace kmon.Demo.Controllers
 {
     public class HomeController : Controller
     {
