@@ -24,7 +24,7 @@ namespace kmon
 
             if (!options.Errors)
             {
-                monArgs = options.ParsedArgs();
+                monArgs = options.ParsedArgs().Trim();
             }
 
             return monArgs;
