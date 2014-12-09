@@ -29,7 +29,7 @@ namespace kmon
         {
             for (int i = 0; i < _args.Length; i++)
             {
-                Console.WriteLine(_args[i].ToString());
+                //Console.WriteLine(_args[i].ToString());
                 if (_args[i].StartsWith("--"))
                 {
                     switch (_args[i].ToLower())
@@ -49,7 +49,7 @@ namespace kmon
 
         public string ParsedArgs()
         {
-            return string.Format("--ext {0} --exec \"{2}k {1} \"", 
+            return string.Format("--ext {0} --exec \"{2}k {1}\"", 
                 FileExtensions, 
                 Server, 
                 Server.ToLower() == "web" ? "cmd /c " : "");

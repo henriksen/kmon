@@ -1,5 +1,5 @@
 ﻿{
-    "version": "0.2.0-*",
+    "version": "0.3.0-*",
     "authors": [ "Shayne Boyer", "Glenn F. Henriksen" ],
     "description": "A k-command for running 'k web' or 'k kestrel' wrapped in nodemon.",
     "dependencies": {
