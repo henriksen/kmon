@@ -23,7 +23,7 @@
         "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
         "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5001",
         "gen": "Microsoft.Framework.CodeGeneration",
-        "mon" : "kmon --ext cs,json,js --server kestrel"
+        "mon" : "kmon --ext cs,json,js,cshtml --server kestrel"
     },
 
     "frameworks": {

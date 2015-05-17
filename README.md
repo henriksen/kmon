@@ -28,7 +28,7 @@ Add a `mon` command to your project.json file:
   },
 ```
 
-From the command line, run `k mon`. It's pronounced *"kuh-mon"*. 
+From the command line, run `dnx . mon`. It's pronounced *"kuh-mon"*. 
 
 You can call it something else than `mon`, but then you can't shout out "kuh-mon!" when you run it. 
 
