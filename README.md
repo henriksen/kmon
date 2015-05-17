@@ -38,6 +38,5 @@ one of those extensions. The `--server` parameter is used to specify the necessa
 If either `--ext` or `--server` is not specified the default are shown above.
 
 ## Known issues
-This is the first release and a work in progress. Critical issues:
-* Initial proof of concept only works on Windows and runs the web command. Need some work to run on Mono and run Kestrel. 
+This is the first release and a work in progress. 
 * Little or no error handling. 
