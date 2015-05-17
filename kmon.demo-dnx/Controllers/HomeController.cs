@@ -15,7 +15,7 @@ namespace kmon.demo_dnx.Controllers
 
         public IActionResult About()
         {
-            ViewBag.Message = "Welcome To DNX About.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
