@@ -13,11 +13,10 @@ Add a `mon` command to your project.json file:
 **Web Project**
 ```
 "commands": {
-    /* Change the port number when you are self hosting this application */
-    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
-    "gen": "Microsoft.Framework.CodeGeneration",
-    "ef": "EntityFramework.Commands",
-    "mon" : "kmon --ext cs,json,js,cshtml --server web"
+        "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
+        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5001",
+        "gen": "Microsoft.Framework.CodeGeneration",
+        "mon" : "kmon --ext cs,json,js,cshtml --server kestrel"
 },
 ```
 
