@@ -8,6 +8,9 @@ web server, or console application, whenever a change is detected. Main use is w
 
 `dnu install kmon` to install from Nuget.org
 
+**Prerequisites**
+You require [nodemon](https://github.com/remy/nodemon). You can install nodemon using ```npm install nodemon```
+
 Add a `mon` command to your project.json file: 
 
 **Web Project**
