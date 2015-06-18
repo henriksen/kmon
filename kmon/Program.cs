@@ -8,13 +8,20 @@ namespace kmon
         public void Main(string[] args)
         {
 
-            Process process = new Process();
-            process.StartInfo.FileName = "nodemon";
-            process.StartInfo.Arguments = ParseArgs(args);
-            
-            process.Start();
-            process.WaitForExit();
-            Console.WriteLine("Done.");
+            while(true) {
+                Process process = new Process();
+                process.StartInfo.UseShellExecute = false;
+                
+                process.StartInfo.FileName = "dnx";
+                process.StartInfo.Arguments = ParseArgs(args);
+                
+                Console.WriteLine("Starting {0} {1}, will restart it if it stops. Press Ctrl+C to quit.", 
+                    process.StartInfo.FileName, process.StartInfo.Arguments);
+                process.Start();
+                process.WaitForExit();
+                Console.WriteLine("Process stopped with exitcode {0}", process.ExitCode);
+                Console.WriteLine("Restarting...");
+            }
         }
 
         string ParseArgs(string[] args)
@@ -26,7 +33,6 @@ namespace kmon
             {
                 monArgs = options.ParsedArgs().Trim();
             }
-
             return monArgs;
         }
     }
