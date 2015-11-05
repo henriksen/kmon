@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.24606.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "kmon", "kmon\kmon.xproj", "{4310A548-53BF-4D21-A8C8-466323EE245D}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "kmon.demo_dnx", "kmon.demo-dnx\kmon.demo_dnx.xproj", "{B7D20D7B-28D1-4318-BE00-0A4FC2F20E23}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dnx.demo.beta8", "dnx.demo.beta8\dnx.demo.beta8.xproj", "{41EC8BAF-78B3-4E47-A167-64FC93C04FC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4310A548-53BF-4D21-A8C8-466323EE245D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4310A548-53BF-4D21-A8C8-466323EE245D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4310A548-53BF-4D21-A8C8-466323EE245D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7D20D7B-28D1-4318-BE00-0A4FC2F20E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7D20D7B-28D1-4318-BE00-0A4FC2F20E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7D20D7B-28D1-4318-BE00-0A4FC2F20E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7D20D7B-28D1-4318-BE00-0A4FC2F20E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EC8BAF-78B3-4E47-A167-64FC93C04FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EC8BAF-78B3-4E47-A167-64FC93C04FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EC8BAF-78B3-4E47-A167-64FC93C04FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EC8BAF-78B3-4E47-A167-64FC93C04FC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

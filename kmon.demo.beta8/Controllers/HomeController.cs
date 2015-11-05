@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 
-namespace kmon.demo_dnx.Controllers
+namespace kmon.demo.beta8.Controllers
 {
     public class HomeController : Controller
     {

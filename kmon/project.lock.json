@@ -1,6 +1,349 @@
 {
   "locked": false,
-  "version": -9998,
+  "version": 1,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "kmon/0.4.0": {
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/kmon.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/kmon.dll": {}
+        }
+      }
+    },
+    "DNXCore,Version=v5.0": {
+      "kmon/0.4.0": {
+        "dependencies": {
+          "System.Console": "4.0.0-beta-22816",
+          "System.Diagnostics.Process": "4.0.0-beta-22231"
+        },
+        "compile": {
+          "lib/dnxcore50/kmon.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/kmon.dll": {}
+        }
+      },
+      "System.Console/4.0.0-beta-23409": {
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Console.dll": {}
+        }
+      },
+      "System.Diagnostics.Process/4.0.0-beta-22231": {
+        "dependencies": {
+          "System.IO": "4.0.0-beta-22231",
+          "System.Runtime": "4.0.0-beta-22231",
+          "System.Runtime.Handles": "4.0.0-beta-22231",
+          "System.Text.Encoding": "4.0.0-beta-22231"
+        },
+        "compile": {
+          "lib/contract/System.Diagnostics.Process.dll": {}
+        },
+        "runtime": {
+          "lib/aspnetcore50/System.Diagnostics.Process.dll": {}
+        }
+      },
+      "System.IO/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.0.0",
+          "System.Text.Encoding": "4.0.0",
+          "System.Threading.Tasks": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.IO.dll": {}
+        }
+      },
+      "System.Runtime/4.0.0": {
+        "compile": {
+          "ref/dotnet/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.Handles/4.0.0-beta-22231": {
+        "dependencies": {
+          "System.Runtime": "4.0.0-beta-22231"
+        },
+        "compile": {
+          "lib/contract/System.Runtime.Handles.dll": {}
+        },
+        "runtime": {
+          "lib/aspnetcore50/System.Runtime.Handles.dll": {}
+        }
+      },
+      "System.Text.Encoding/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Text.Encoding.dll": {}
+        }
+      },
+      "System.Threading.Tasks/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Threading.Tasks.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "kmon/0.4.0": {
+      "sha512": "8Xm6lKQUwdYr9dI1OawB5w12dS4w/LDR4eY/rC/ntBeai3xskHXxiBou5Xr44VzerCezIif70yFzX7ILNe0NVw==",
+      "files": [
+        "app/project.json",
+        "kmon.0.4.0.nupkg",
+        "kmon.0.4.0.nupkg.sha512",
+        "kmon.nuspec",
+        "lib/dnx451/kmon.dll",
+        "lib/dnx451/kmon.xml",
+        "lib/dnxcore50/kmon.dll",
+        "lib/dnxcore50/kmon.xml"
+      ]
+    },
+    "System.Console/4.0.0-beta-23409": {
+      "serviceable": true,
+      "sha512": "vVstiHq9NKm6jfqm2OQGYgEinU4Zrwbcjtfxq61v0xHXVhx8p3igw9XQCdCOILf1ZWsZtKcvdbcazNP7tL+u+g==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Console.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Console.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Console.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtime.json",
+        "System.Console.4.0.0-beta-23409.nupkg",
+        "System.Console.4.0.0-beta-23409.nupkg.sha512",
+        "System.Console.nuspec"
+      ]
+    },
+    "System.Diagnostics.Process/4.0.0-beta-22231": {
+      "sha512": "JZ6Iv5xlE3UalXal68AyPvhqw1elzdvNeTGcZbJKFhVD9+yjCkamsw63YpMUGb3rAC/bMEol9le/ERlLDYRAKA==",
+      "files": [
+        "lib/aspnetcore50/System.Diagnostics.Process.dll",
+        "lib/contract/System.Diagnostics.Process.dll",
+        "License.rtf",
+        "System.Diagnostics.Process.4.0.0-beta-22231.nupkg",
+        "System.Diagnostics.Process.4.0.0-beta-22231.nupkg.sha512",
+        "System.Diagnostics.Process.nuspec"
+      ]
+    },
+    "System.IO/4.0.0": {
+      "sha512": "MoCHQ0u5n0OMwUS8OX4Gl48qKiQziSW5cXvt82d+MmAcsLq9OL90+ihnu/aJ1h6OOYcBswrZAEuApfZha9w2lg==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "License.rtf",
+        "ref/dotnet/de/System.IO.xml",
+        "ref/dotnet/es/System.IO.xml",
+        "ref/dotnet/fr/System.IO.xml",
+        "ref/dotnet/it/System.IO.xml",
+        "ref/dotnet/ja/System.IO.xml",
+        "ref/dotnet/ko/System.IO.xml",
+        "ref/dotnet/ru/System.IO.xml",
+        "ref/dotnet/System.IO.dll",
+        "ref/dotnet/System.IO.xml",
+        "ref/dotnet/zh-hans/System.IO.xml",
+        "ref/dotnet/zh-hant/System.IO.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.IO.xml",
+        "ref/netcore50/es/System.IO.xml",
+        "ref/netcore50/fr/System.IO.xml",
+        "ref/netcore50/it/System.IO.xml",
+        "ref/netcore50/ja/System.IO.xml",
+        "ref/netcore50/ko/System.IO.xml",
+        "ref/netcore50/ru/System.IO.xml",
+        "ref/netcore50/System.IO.dll",
+        "ref/netcore50/System.IO.xml",
+        "ref/netcore50/zh-hans/System.IO.xml",
+        "ref/netcore50/zh-hant/System.IO.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.IO.4.0.0.nupkg",
+        "System.IO.4.0.0.nupkg.sha512",
+        "System.IO.nuspec"
+      ]
+    },
+    "System.Runtime/4.0.0": {
+      "sha512": "Uq9epame8hEqJlj4KaWb67dDJvj4IM37jRFGVeFbugRdPz48bR0voyBhrbf3iSa2tAmlkg4lsa6BUOL9iwlMew==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "License.rtf",
+        "ref/dotnet/de/System.Runtime.xml",
+        "ref/dotnet/es/System.Runtime.xml",
+        "ref/dotnet/fr/System.Runtime.xml",
+        "ref/dotnet/it/System.Runtime.xml",
+        "ref/dotnet/ja/System.Runtime.xml",
+        "ref/dotnet/ko/System.Runtime.xml",
+        "ref/dotnet/ru/System.Runtime.xml",
+        "ref/dotnet/System.Runtime.dll",
+        "ref/dotnet/System.Runtime.xml",
+        "ref/dotnet/zh-hans/System.Runtime.xml",
+        "ref/dotnet/zh-hant/System.Runtime.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Runtime.4.0.0.nupkg",
+        "System.Runtime.4.0.0.nupkg.sha512",
+        "System.Runtime.nuspec"
+      ]
+    },
+    "System.Runtime.Handles/4.0.0-beta-22231": {
+      "sha512": "cILC3Qv6uRiXorkEHEwQYyDuNAinG1U7YqP2b+/HEsPnPWVqePpm+L+2iNdHDehCM+mCUo9Wav6PPiwL4wfaxQ==",
+      "files": [
+        "lib/aspnetcore50/System.Runtime.Handles.dll",
+        "lib/contract/System.Runtime.Handles.dll",
+        "License.rtf",
+        "System.Runtime.Handles.4.0.0-beta-22231.nupkg",
+        "System.Runtime.Handles.4.0.0-beta-22231.nupkg.sha512",
+        "System.Runtime.Handles.nuspec"
+      ]
+    },
+    "System.Text.Encoding/4.0.0": {
+      "sha512": "AMxFNOXpA6Ab8swULbXuJmoT2K5w6TnV3ObF5wsmEcIHQUJghoZtDVfVHb08O2wW15mOSI1i9Wg0Dx0pY13o8g==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "License.rtf",
+        "ref/dotnet/de/System.Text.Encoding.xml",
+        "ref/dotnet/es/System.Text.Encoding.xml",
+        "ref/dotnet/fr/System.Text.Encoding.xml",
+        "ref/dotnet/it/System.Text.Encoding.xml",
+        "ref/dotnet/ja/System.Text.Encoding.xml",
+        "ref/dotnet/ko/System.Text.Encoding.xml",
+        "ref/dotnet/ru/System.Text.Encoding.xml",
+        "ref/dotnet/System.Text.Encoding.dll",
+        "ref/dotnet/System.Text.Encoding.xml",
+        "ref/dotnet/zh-hans/System.Text.Encoding.xml",
+        "ref/dotnet/zh-hant/System.Text.Encoding.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.Text.Encoding.xml",
+        "ref/netcore50/es/System.Text.Encoding.xml",
+        "ref/netcore50/fr/System.Text.Encoding.xml",
+        "ref/netcore50/it/System.Text.Encoding.xml",
+        "ref/netcore50/ja/System.Text.Encoding.xml",
+        "ref/netcore50/ko/System.Text.Encoding.xml",
+        "ref/netcore50/ru/System.Text.Encoding.xml",
+        "ref/netcore50/System.Text.Encoding.dll",
+        "ref/netcore50/System.Text.Encoding.xml",
+        "ref/netcore50/zh-hans/System.Text.Encoding.xml",
+        "ref/netcore50/zh-hant/System.Text.Encoding.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Text.Encoding.4.0.0.nupkg",
+        "System.Text.Encoding.4.0.0.nupkg.sha512",
+        "System.Text.Encoding.nuspec"
+      ]
+    },
+    "System.Threading.Tasks/4.0.0": {
+      "sha512": "dA3y1B6Pc8mNt9obhEWWGGpvEakS51+nafXpmM/Z8IF847GErLXGTjdfA+AYEKszfFbH7SVLWUklXhYeeSQ1lw==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "License.rtf",
+        "ref/dotnet/de/System.Threading.Tasks.xml",
+        "ref/dotnet/es/System.Threading.Tasks.xml",
+        "ref/dotnet/fr/System.Threading.Tasks.xml",
+        "ref/dotnet/it/System.Threading.Tasks.xml",
+        "ref/dotnet/ja/System.Threading.Tasks.xml",
+        "ref/dotnet/ko/System.Threading.Tasks.xml",
+        "ref/dotnet/ru/System.Threading.Tasks.xml",
+        "ref/dotnet/System.Threading.Tasks.dll",
+        "ref/dotnet/System.Threading.Tasks.xml",
+        "ref/dotnet/zh-hans/System.Threading.Tasks.xml",
+        "ref/dotnet/zh-hant/System.Threading.Tasks.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/de/System.Threading.Tasks.xml",
+        "ref/netcore50/es/System.Threading.Tasks.xml",
+        "ref/netcore50/fr/System.Threading.Tasks.xml",
+        "ref/netcore50/it/System.Threading.Tasks.xml",
+        "ref/netcore50/ja/System.Threading.Tasks.xml",
+        "ref/netcore50/ko/System.Threading.Tasks.xml",
+        "ref/netcore50/ru/System.Threading.Tasks.xml",
+        "ref/netcore50/System.Threading.Tasks.dll",
+        "ref/netcore50/System.Threading.Tasks.xml",
+        "ref/netcore50/zh-hans/System.Threading.Tasks.xml",
+        "ref/netcore50/zh-hant/System.Threading.Tasks.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Threading.Tasks.4.0.0.nupkg",
+        "System.Threading.Tasks.4.0.0.nupkg.sha512",
+        "System.Threading.Tasks.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
     "": [],
     "DNX,Version=v4.5.1": [],
@@ -8,298 +351,5 @@
       "System.Diagnostics.Process >= 4.0.0-beta-22231",
       "System.Console >= 4.0.0-*"
     ]
-  },
-  "libraries": {
-    "System.Console/4.0.0-beta-22816": {
-      "serviceable": false,
-      "sha": "Nj6lappTB2mN/jfONYJ88FTG+vtPWa4/KHlkjukULmOrhoA0x5IfZrbCZJdyZ9lYoS0s1o3DOerwnlw8KSS5jQ==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.IO": "4.0.10-beta-22816",
-            "System.Runtime": "4.0.20-beta-22816"
-          },
-          "frameworkAssemblies": [
-            "mscorlib"
-          ],
-          "runtimeAssemblies": [
-            "lib/net45/System.Console.dll"
-          ],
-          "compileAssemblies": [
-            "lib/net45/System.Console.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.IO": "4.0.10-beta-22816",
-            "System.Runtime": "4.0.20-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Console.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Console.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Console.4.0.0-beta-22816.nupkg",
-        "System.Console.4.0.0-beta-22816.nupkg.sha512",
-        "System.Console.nuspec",
-        "lib/aspnetcore50/System.Console.dll",
-        "lib/contract/System.Console.dll",
-        "lib/net45/System.Console.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Console.dll"
-      ]
-    },
-    "System.Diagnostics.Process/4.0.0-beta-22231": {
-      "serviceable": false,
-      "sha": "JZ6Iv5xlE3UalXal68AyPvhqw1elzdvNeTGcZbJKFhVD9+yjCkamsw63YpMUGb3rAC/bMEol9le/ERlLDYRAKA==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.IO": "4.0.0-beta-22231",
-            "System.Runtime": "4.0.0-beta-22231",
-            "System.Runtime.Handles": "4.0.0-beta-22231",
-            "System.Text.Encoding": "4.0.0-beta-22231"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [],
-          "compileAssemblies": []
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.IO": "4.0.0-beta-22231",
-            "System.Runtime": "4.0.0-beta-22231",
-            "System.Runtime.Handles": "4.0.0-beta-22231",
-            "System.Text.Encoding": "4.0.0-beta-22231"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Diagnostics.Process.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Diagnostics.Process.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Diagnostics.Process.4.0.0-beta-22231.nupkg",
-        "System.Diagnostics.Process.4.0.0-beta-22231.nupkg.sha512",
-        "System.Diagnostics.Process.nuspec",
-        "lib/aspnetcore50/System.Diagnostics.Process.dll",
-        "lib/contract/System.Diagnostics.Process.dll"
-      ]
-    },
-    "System.IO/4.0.10-beta-22816": {
-      "serviceable": false,
-      "sha": "/wVhoi2uVXw5IZFU+JrPlyVgKrtMPtzQaYQ3DKUxH9nqiX64BChTFGNDcwZK3iNWTIWESxJhj9JR3lbqbG/PIg==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.Runtime": "4.0.20-beta-22816",
-            "System.Text.Encoding": "4.0.10-beta-22816",
-            "System.Threading.Tasks": "4.0.10-beta-22816"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System"
-          ],
-          "runtimeAssemblies": [
-            "lib/net45/System.IO.dll"
-          ],
-          "compileAssemblies": [
-            "lib/net45/System.IO.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.Runtime": "4.0.20-beta-22816",
-            "System.Text.Encoding": "4.0.10-beta-22816",
-            "System.Threading.Tasks": "4.0.10-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.IO.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.IO.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.IO.4.0.10-beta-22816.nupkg",
-        "System.IO.4.0.10-beta-22816.nupkg.sha512",
-        "System.IO.nuspec",
-        "lib/aspnetcore50/System.IO.dll",
-        "lib/contract/System.IO.dll",
-        "lib/net45/System.IO.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.IO.dll"
-      ]
-    },
-    "System.Runtime/4.0.20-beta-22816": {
-      "serviceable": false,
-      "sha": "sDSJEmM6Q5O7Nn9XxHTrsEJ4bv4hsBdeTWjuvyzd9/u9ujl9AWa3q1XFLrdPZetILPOC1P0+1LOCq4kZcsKF5Q==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {},
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.ComponentModel.Composition",
-            "System.Core"
-          ],
-          "runtimeAssemblies": [
-            "lib/net45/System.Runtime.dll"
-          ],
-          "compileAssemblies": [
-            "lib/net45/System.Runtime.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {},
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Runtime.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Runtime.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Runtime.4.0.20-beta-22816.nupkg",
-        "System.Runtime.4.0.20-beta-22816.nupkg.sha512",
-        "System.Runtime.nuspec",
-        "lib/aspnetcore50/System.Runtime.dll",
-        "lib/contract/System.Runtime.dll",
-        "lib/net45/System.Runtime.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Runtime.dll"
-      ]
-    },
-    "System.Runtime.Handles/4.0.0-beta-22231": {
-      "serviceable": false,
-      "sha": "cILC3Qv6uRiXorkEHEwQYyDuNAinG1U7YqP2b+/HEsPnPWVqePpm+L+2iNdHDehCM+mCUo9Wav6PPiwL4wfaxQ==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.Runtime": "4.0.0-beta-22231"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [],
-          "compileAssemblies": []
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.Runtime": "4.0.0-beta-22231"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Runtime.Handles.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Runtime.Handles.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Runtime.Handles.4.0.0-beta-22231.nupkg",
-        "System.Runtime.Handles.4.0.0-beta-22231.nupkg.sha512",
-        "System.Runtime.Handles.nuspec",
-        "lib/aspnetcore50/System.Runtime.Handles.dll",
-        "lib/contract/System.Runtime.Handles.dll"
-      ]
-    },
-    "System.Text.Encoding/4.0.10-beta-22816": {
-      "serviceable": false,
-      "sha": "QDKTAvat7aDGMWnVkGm6tJvvmc2zSTa/p8M4/OEBBkZKNx4SGkeGEjFUhl7b6AXZ220m4dACygkiAVoB/LqMHw==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.Runtime": "4.0.20-beta-22816"
-          },
-          "frameworkAssemblies": [
-            "mscorlib"
-          ],
-          "runtimeAssemblies": [
-            "lib/net45/System.Text.Encoding.dll"
-          ],
-          "compileAssemblies": [
-            "lib/net45/System.Text.Encoding.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.Runtime": "4.0.20-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Text.Encoding.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Text.Encoding.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Text.Encoding.4.0.10-beta-22816.nupkg",
-        "System.Text.Encoding.4.0.10-beta-22816.nupkg.sha512",
-        "System.Text.Encoding.nuspec",
-        "lib/aspnetcore50/System.Text.Encoding.dll",
-        "lib/contract/System.Text.Encoding.dll",
-        "lib/net45/System.Text.Encoding.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Text.Encoding.dll"
-      ]
-    },
-    "System.Threading.Tasks/4.0.10-beta-22816": {
-      "serviceable": false,
-      "sha": "e7TcoQuIPQ4bvkkCY2ulU8NFvj8XqYxsGpD3fAq1KajAlpx5j327Q13lKxlGPb7ouHQydKHCy5G1ZGuydb0DAA==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.Runtime": "4.0.20-beta-22816"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System.Core"
-          ],
-          "runtimeAssemblies": [
-            "lib/net45/System.Threading.Tasks.dll"
-          ],
-          "compileAssemblies": [
-            "lib/net45/System.Threading.Tasks.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.Runtime": "4.0.20-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Threading.Tasks.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Threading.Tasks.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Threading.Tasks.4.0.10-beta-22816.nupkg",
-        "System.Threading.Tasks.4.0.10-beta-22816.nupkg.sha512",
-        "System.Threading.Tasks.nuspec",
-        "lib/aspnetcore50/System.Threading.Tasks.dll",
-        "lib/contract/System.Threading.Tasks.dll",
-        "lib/net45/System.Threading.Tasks.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Threading.Tasks.dll"
-      ]
-    }
   }
 }
