@@ -1,12 +1,13 @@
 ﻿{
-    "version": "0.4.0-*",
+    "version": "0.5.0-beta",
     "authors": [ "Shayne Boyer", "Glenn F. Henriksen" ],
-    "description": "A dnx-command for running 'dnx web' or 'dnx kestrel' wrapped in nodemon.",
+    "description": "A dnx-command for running 'dnx --watch web' or 'dnx --watch kestrel' and restart it when it quits. Install it as a global command: 'dnu commands install kmon'",
     "dependencies": {
 
     },
     "commands": {
-        "run": "run"
+        "kmon": "kmon",
+        "kmon-kestrel" : "kmon --server kestrel"
     },
     "frameworks": {
         "dnx451": { },

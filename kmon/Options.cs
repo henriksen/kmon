@@ -8,16 +8,11 @@ namespace kmon
         public Options(string[] args)
         {
             _args = args;
-
             Parse();
         }
 
-
         private string _server = "web";
-        private string _fileExtenstions = "cs,json,js";
         private string _errorMessage = "";
-
-        public string FileExtensions { get { return _fileExtenstions; } set { _fileExtenstions = value; } }
 
         public string Server { get { return _server; } set { _server = value; } }
 
@@ -34,14 +29,9 @@ namespace kmon
                 {
                     switch (_args[i].ToLower())
                     {
-                        case "--ext":
-                            FileExtensions = _args[i + 1];
-                            break;
-
                         case "--server":
                             Server = _args[i + 1];
                             break;
-
                     }
                 }
             }
@@ -49,10 +39,8 @@ namespace kmon
 
         public string ParsedArgs()
         {
-            return string.Format("--ext {0} --exec \"{2}dnx . {1}\"", 
-                FileExtensions, 
-                Server, 
-                Server.ToLower() == "web" ? "cmd /c " : "");
+            return string.Format(". --watch {0}", 
+                Server);
         }
     }
 }
