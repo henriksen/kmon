@@ -49,7 +49,7 @@ namespace kmon
 
         public string ParsedArgs()
         {
-            return string.Format("--ext {0} --exec \"{2}dnx . {1}\"", 
+            return string.Format("--ext {0} --exec \"{2}dnx {1}\"", 
                 FileExtensions, 
                 Server, 
                 Server.ToLower() == "web" ? "cmd /c " : "");
